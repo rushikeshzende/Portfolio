@@ -5,6 +5,7 @@ import { FaGithub, FaFilePdf, FaFlask } from 'react-icons/fa';
 import { BiBrain, BiTestTube, BiShieldAlt2, BiGitBranch } from 'react-icons/bi';
 import { BsGraphUp, BsShieldCheck, BsClipboardData, BsLightningCharge } from 'react-icons/bs';
 import { TbHeartRateMonitor } from 'react-icons/tb';
+import ScrollToButton from '@/components/ScrollToButton';
 
 export const metadata: Metadata = {
   title: "Alzheimer's Disease Detection using MRI",
@@ -56,12 +57,6 @@ export default function AlzheimersDetection() {
             className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center gap-2"
           >
             <FaGithub /> View on GitHub
-          </a>
-          <a 
-            href="#" 
-            className="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-lg font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2"
-          >
-            <FaFilePdf /> Research Paper
           </a>
         </div>
       </div>
@@ -304,12 +299,12 @@ export default function AlzheimersDetection() {
             Interested in implementing this technology or learning more about our research? Let's discuss how we can work together to advance Alzheimer's detection and care.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link 
-              href="/contact" 
+            <ScrollToButton 
+              targetId="contact"
               className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
               Get in Touch
-            </Link>
+            </ScrollToButton>
             <Link 
               href="/" 
               className="px-6 py-3 bg-slate-900 dark:bg-slate-700 text-white rounded-lg font-medium hover:bg-slate-800 dark:hover:bg-slate-600 transition-colors inline-flex items-center"
